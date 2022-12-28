@@ -33,12 +33,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
      var mobileNoController: MDCTextInputControllerOutlined?
 
-override func viewDidLoad() {
-     super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        emailIdController = MDCTextInputControllerOutlined(textInput: textFld_EmailId)
-        passwordController = MDCTextInputControllerOutlined(textInput: textFld_Password)
-        mobileNoController = MDCTextInputControllerOutlined(textInput: textFld_MobileNo)
+     override func viewDidLoad() {
+          super.viewDidLoad()
+             // Do any additional setup after loading the view, typically from a nib.
+             emailIdController = MDCTextInputControllerOutlined(textInput: textFld_EmailId)
+             passwordController = MDCTextInputControllerOutlined(textInput: textFld_Password)
+             mobileNoController = MDCTextInputControllerOutlined(textInput: textFld_MobileNo)
 
-  }
+       }
 }

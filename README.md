@@ -19,30 +19,26 @@ import MaterialComponents
 class ViewController: UIViewController, UITextFieldDelegate {
 
 
-@IBOutlet weak var textFld_EmailId: MDCTextField!
+     @IBOutlet weak var textFld_EmailId: MDCTextField!
 
-@IBOutlet weak var textFld_Password: MDCTextField!
+     @IBOutlet weak var textFld_Password: MDCTextField!
 
-@IBOutlet weak var textFld_MobileNo: MDCTextField!
+     @IBOutlet weak var textFld_MobileNo: MDCTextField!
 
 
-// MARK: Properties
-var emailIdController: MDCTextInputControllerOutlined?
+     // MARK: Properties
+     var emailIdController: MDCTextInputControllerOutlined?
 
-var passwordController: MDCTextInputControllerOutlined?
+     var passwordController: MDCTextInputControllerOutlined?
 
-var mobileNoController: MDCTextInputControllerOutlined?
-
+     var mobileNoController: MDCTextInputControllerOutlined?
 
 override func viewDidLoad() {
-
      super.viewDidLoad()
-
         // Do any additional setup after loading the view, typically from a nib.
         emailIdController = MDCTextInputControllerOutlined(textInput: textFld_EmailId)
         passwordController = MDCTextInputControllerOutlined(textInput: textFld_Password)
         mobileNoController = MDCTextInputControllerOutlined(textInput: textFld_MobileNo)
 
   }
-
 }
